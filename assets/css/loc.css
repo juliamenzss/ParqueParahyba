@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbfceb;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #B2B377;
+    height: 170px;
+
+}
+
+.bemVindoNav{
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.textoHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    margin-left: 50px;
+
+}
+
+.textoHeader h1{
+    color: #51532b;
+    font-family: 'Embed code', sans-serif;
+    padding-bottom: 5px;
+    font-size: 45px;
+    margin-top: 35px;
+}
+.textoHeader p{
+    
+    color: black;
+}
+
+.linhaHorizontal{
+    height: 2px;
+    background-color: #0000001c;
+    margin: 10px 0px;
+}
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #B2B377;
+    padding: 15px 0 10px 56vw;
+    z-index: 999; /* Garante que a navbar fique acima de outros elementos */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    font-size: 14px;
+  }
+  
+  .navbar li {
+    margin-right: 15px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover {
+    color: #fafad3;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 60px;
+    background-color: #B2B377;
+}
+
+h2{
+    padding: 20px 0;
+}
+
+h2, h3, h4, h5{
+    color: #51532b;
+}
+
+.info-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+}
+
+.info-container h2 {
+    margin-top: 20px;
+    color: #51532b;
+    font-size: 1.8rem;
+}
+
+.info-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.map-container {
+    margin: 20px 0;
+    text-align: center;
+}
