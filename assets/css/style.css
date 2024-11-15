@@ -16,7 +16,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fbfceb;
+    background-color: #FBFCEB;
 }
 
 .imagemContainer {
@@ -39,13 +39,8 @@ header {
     background-position: center;
     text-align: center;
     overflow: hidden;
-    background-color: #145940;
-    height: 150px;
-}
-
-.bemVindoNav{
-    padding: 10px;
-    margin-left: 20px;
+    background-color: #c4b46a;
+    height: 100px;
 }
 
 .textoHeader{
@@ -55,15 +50,14 @@ header {
     align-items: center;
     padding: 10px 5px;
     margin-left: 20px;
-
 }
 
 .textoHeader h1{
     color: #000000;
-    padding-bottom: 5px;
     font-family: 'Embed code', sans-serif;
-    font-size: 45px;
-    margin-top: 35px;
+    /* font-size: 45px; */
+    font-size: 20px;
+    margin-top: 50px;
 }
 .textoHeader p{
     color: black;
@@ -71,8 +65,12 @@ header {
 
 .linhaHorizontal{
     height: 2px;
-    background-color: #0000001c;
+    background-color: #c6bd563d;
     margin: 10px 0px;
+}
+
+.bemVindoNav{
+    margin-left: 20px;
 }
 
 
@@ -81,9 +79,11 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #0f402e;
-    padding: 15px 0 10px 56vw;
-    z-index: 999; /* Garante que a navbar fique acima de outros elementos */
+    background-color: #FBFCEB;
+    padding: 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
   }
   
   .navbar ul {
@@ -91,7 +91,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 14px;
   }
   
@@ -107,25 +107,32 @@ header {
   }
 
   nav ul li a:hover {
-    color: #fafad3;
+    color: #5a5c2fd8;
 }
 
 
 .carousel-custom {
-    width: 500px; /* Defina a largura desejada */
-    margin-left: 0; /* Alinha o carrossel à esquerda */
+    box-shadow: 
+  6px 0 10px -5px rgba(0, 0, 0, 0.192),
+  -6px 0 10px -5px rgba(0, 0, 0, 0.192);
+    border-radius: 8px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .carousel-custom .carousel-inner img {
-    width: 100%; /* Ajusta as imagens para ocupar toda a largura do carrossel */
-    height: auto; /* Mantém a proporção das imagens */
-    max-height: 300px; /* Define uma altura máxima para limitar o tamanho vertical */
+    width: 100%; 
+    height: 400px; 
+    max-height: 1000px;
 }
 
 #carouselExampleFade{
-    margin-left: 280px;
-    padding: 15px;
+    padding: 0;
 }
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -137,7 +144,7 @@ footer{
     justify-content: center;
     padding: 20px;
     height: 60px;
-    background-color: #B2B377;
+    background-color: #c4b46a;
 }
 
 h2{
@@ -153,8 +160,7 @@ h2, h3, h4, h5{
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.192);
 }
 
 .info-container h2 {
