@@ -185,3 +185,28 @@ h2, h3, h4, h5{
     margin-top: 50px;
 }
 
+/* CONFIGURAÇÃO SETAS DO CARROSEL - INICIO*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #E5E483;  /* Cor de fundo das setas */
+    width: 30px;  /* Aumenta o tamanho */
+    height: 30px;  /* Aumenta o tamanho */
+    border-radius: 50%;  /* Torna as setas circulares */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;  /* Centraliza verticalmente */
+    transform: translateY(-50%);  /* Ajuste preciso para centralização */
+    font-size: 30px;  /* Aumenta o tamanho da seta */
+}
+
+.carousel-control-prev {
+    left: -56px;  /* Desloca a seta anterior para a esquerda */
+}
+
+.carousel-control-next {
+    right: 9px;  /* Desloca a seta seguinte para a direita */
+}
+/* CONFIGURAÇÃO SETAS DO CARROSEL - FIM*/
