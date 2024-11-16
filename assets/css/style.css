@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700;900&display=swap');
+
+:root {
+    --background-light: #FBFCEB;
+    --background-dark: #c4b46a;
+    --accent-light: #E5E483;
+    --text-dark: #000000;
+    --text-light: #51532b;
+    --divider: #c6bd563d;
+}
 
 html {
     scroll-behavior: smooth;
@@ -9,14 +18,15 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    outline: none; 
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FBFCEB;
+    background-color: var(--background-light);
+    color: var(--text-dark);
 }
 
 .imagemContainer {
@@ -25,13 +35,22 @@ body {
     align-items: center;
     gap: 10px;
     max-width: 800px;
-    margin: 10px;
+    margin: 10px auto; 
     flex-wrap: wrap;
-    padding: 15px 8px;
+    padding: 15px;
 }
 
 .imagemItem {
-    height: auto;
+    width: 200px;
+    height: 200px; 
+    border-radius: 15px; 
+    object-fit: cover; 
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.192); 
+    transition: transform 0.3s ease; 
+}
+
+.imagemItem:hover {
+    transform: scale(1.05); 
 }
 
 header {
@@ -39,11 +58,11 @@ header {
     background-position: center;
     text-align: center;
     overflow: hidden;
-    background-color: #c4b46a;
+    background-color: var(--background-dark);
     height: 100px;
 }
 
-.textoHeader{
+.textoHeader {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -52,69 +71,68 @@ header {
     margin-left: 20px;
 }
 
-.textoHeader h1{
-    color: #000000;
-    font-family: 'Embed code', sans-serif;
-    /* font-size: 45px; */
+.textoHeader h1 {
+    color: var(--text-dark);
+    font-family: 'Montserrat', sans-serif; 
     font-size: 20px;
     margin-top: 50px;
 }
-.textoHeader p{
-    color: black;
+
+.textoHeader p {
+    color: var(--text-dark);
 }
 
-.linhaHorizontal{
+.linhaHorizontal {
     height: 2px;
-    background-color: #c6bd563d;
-    margin: 10px 0px;
+    background-color: var(--divider);
+    margin: 10px 0;
 }
 
-.bemVindoNav{
+.bemVindoNav {
     margin-left: 20px;
 }
-
 
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #FBFCEB;
+    background-color: var(--background-light);
     padding: 10px;
     z-index: 999;
     display: flex;
     justify-content: center;
-  }
-  
-  .navbar ul {
+}
+
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     font-size: 14px;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     margin-right: 15px;
-  }
-  
-  .navbar a {
-    color: black;
+}
+
+.navbar a {
+    color: var(--text-dark);
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
-  }
+    transition: color 0.3s ease; 
+}
 
-  nav ul li a:hover {
+.navbar a:hover {
     color: #5a5c2fd8;
 }
 
-
 .carousel-custom {
     box-shadow: 
-  6px 0 10px -5px rgba(0, 0, 0, 0.192),
-  -6px 0 10px -5px rgba(0, 0, 0, 0.192);
+        6px 0 10px -5px rgba(0, 0, 0, 0.192),
+        -6px 0 10px -5px rgba(0, 0, 0, 0.192);
     border-radius: 8px;
     display: flex;
     margin: 0 auto;
@@ -129,7 +147,7 @@ header {
     max-height: 1000px;
 }
 
-#carouselExampleFade{
+#carouselExampleFade {
     padding: 0;
 }
 
@@ -138,21 +156,22 @@ main {
     margin: 0 auto;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     height: 60px;
-    background-color: #c4b46a;
+    background-color: var(--background-dark);
 }
 
-h2{
+h2 {
     padding: 20px 0;
+    color: var(--text-light);
 }
 
-h2, h3, h4, h5{
-    color: #51532b;
+h2, h3, h4, h5 {
+    color: var(--text-light);
 }
 
 .info-container {
@@ -165,7 +184,7 @@ h2, h3, h4, h5{
 
 .info-container h2 {
     margin-top: 20px;
-    color: #51532b;
+    color: var(--text-light);
     font-size: 1.8rem;
 }
 
@@ -178,35 +197,48 @@ h2, h3, h4, h5{
     margin: 20px 0;
     text-align: center;
 }
+
 #espaco {
     margin-top: 50px;
 }
+
 #eventos {
     margin-top: 50px;
 }
 
-/* CONFIGURAÇÃO SETAS DO CARROSEL - INICIO*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #E5E483;  /* Cor de fundo das setas */
-    width: 30px;  /* Aumenta o tamanho */
-    height: 30px;  /* Aumenta o tamanho */
-    border-radius: 50%;  /* Torna as setas circulares */
+    background-color: var(--accent-light);  
+    width: 40px; 
+    height: 40px;  
+    border-radius: 50%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 50%;  /* Centraliza verticalmente */
-    transform: translateY(-50%);  /* Ajuste preciso para centralização */
-    font-size: 30px;  /* Aumenta o tamanho da seta */
+    top: 50%;  
+    transform: translateY(-50%); 
+    z-index: 1; 
 }
 
 .carousel-control-prev {
-    left: -56px;  /* Desloca a seta anterior para a esquerda */
+    left: -56px;  
 }
 
 .carousel-control-next {
-    right: 9px;  /* Desloca a seta seguinte para a direita */
+    right: 9px;  
 }
-/* CONFIGURAÇÃO SETAS DO CARROSEL - FIM*/
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .imagemContainer {
+        flex-direction: column;
+    }
+}
