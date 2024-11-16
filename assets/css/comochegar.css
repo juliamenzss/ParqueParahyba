@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700;900&display=swap');
+
+:root {
+    --background-light: #fbfceb;
+    --background-dark: #B2B377;
+    --text-dark: #51532b;
+    --text-light: #ffffff;
+    --hover-color: #fafad3;
+    --divider: #0000001c;
+}
 
 html {
     scroll-behavior: smooth;
@@ -15,7 +24,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fbfceb;
+    background-color: var(--background-light);
 }
 
 header {
@@ -23,114 +32,111 @@ header {
     background-position: center;
     text-align: center;
     overflow: hidden;
-    background-color: #B2B377;
+    background-color: var(--background-dark);
     height: 170px;
-
 }
 
-.bemVindoNav{
+.bemVindoNav {
     padding: 5px;
     margin-left: 20px;
 }
 
-.textoHeader{
+.textoHeader {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 10px 5px;
     margin-left: 50px;
-
 }
 
-.textoHeader h1{
-    color: #51532b;
-    font-family: 'Embed code', sans-serif;
+.textoHeader h1 {
+    color: var(--text-dark);
+    font-family: 'Noto Serif JP', serif;
     padding-bottom: 5px;
     font-size: 45px;
     margin-top: 35px;
 }
-.textoHeader p{
-    
-    color: black;
+
+.textoHeader p {
+    color: var(--text-dark);
 }
 
-.linhaHorizontal{
+.linhaHorizontal {
     height: 2px;
-    background-color: #0000001c;
-    margin: 10px 0px;
+    background-color: var(--divider);
+    margin: 10px 0;
 }
-
 
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #B2B377;
+    background-color: var(--background-dark);
     padding: 15px 0 10px 56vw;
-    z-index: 999; /* Garante que a navbar fique acima de outros elementos */
-  }
-  
-  .navbar ul {
+    z-index: 999; 
+}
+
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    
     font-size: 14px;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     margin-right: 15px;
-  }
-  
-  .navbar a {
-    color: black;
+}
+
+.navbar a {
+    color: var(--text-light);
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
-  }
-
-  nav ul li a:hover {
-    color: #fafad3;
+    transition: color 0.3s ease; 
 }
 
+.navbar a:hover {
+    color: var(--hover-color);
+}
 
 main {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     height: 60px;
-    background-color: #B2B377;
+    background-color: var(--background-dark);
 }
 
-h2{
+h2 {
     padding: 20px 0;
+    color: var(--text-dark);
 }
 
-h2, h3, h4, h5{
-    color: #51532b;
+h2, h3, h4, h5 {
+    color: var(--text-dark);
 }
 
 .info-container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--text-light);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.041);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-container h2 {
     margin-top: 20px;
-    color: #51532b;
+    color: var(--text-dark);
     font-size: 1.8rem;
 }
 
@@ -142,4 +148,24 @@ h2, h3, h4, h5{
 .map-container {
     margin: 20px 0;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0 10px 0;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .textoHeader h1 {
+        font-size: 32px; 
+    }
+
+    .textoHeader p {
+        text-align: center;
+    }
 }
