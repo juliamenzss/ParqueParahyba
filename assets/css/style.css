@@ -12,13 +12,14 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%; 
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: none; 
+    outline: none;
 }
 
 body {
@@ -34,23 +35,25 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    max-width: 800px;
-    margin: 10px auto; 
+    max-width: 90%; 
+    margin: 10px auto;
     flex-wrap: wrap;
     padding: 15px;
 }
 
 .imagemItem {
-    width: 200px;
-    height: 200px; 
-    border-radius: 15px; 
-    object-fit: cover; 
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.192); 
-    transition: transform 0.3s ease; 
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1; 
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.192);
+    transition: transform 0.3s ease;
 }
 
 .imagemItem:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 header {
@@ -73,8 +76,8 @@ header {
 
 .textoHeader h1 {
     color: var(--text-dark);
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
     margin-top: 50px;
 }
 
@@ -91,7 +94,6 @@ header {
 .bemVindoNav {
     margin-left: 20px;
 }
-
 .navbar {
     width: 100%;
     position: fixed;
@@ -102,6 +104,11 @@ header {
     z-index: 999;
     display: flex;
     justify-content: center;
+    transition: transform 0.3s ease-in-out; /* Suavidade no desaparecimento */
+}
+
+.navbar.hidden {
+    transform: translateY(-100%); /* Esconde a barra ao mover para cima */
 }
 
 .navbar ul {
@@ -110,7 +117,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .navbar li {
@@ -122,7 +129,7 @@ header {
     text-decoration: none;
     padding: 5px 8px;
     font-weight: 500;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
@@ -130,20 +137,18 @@ header {
 }
 
 .carousel-custom {
-    box-shadow: 
-        6px 0 10px -5px rgba(0, 0, 0, 0.192),
-        -6px 0 10px -5px rgba(0, 0, 0, 0.192);
+    box-shadow: 6px 0 10px -5px rgba(0, 0, 0, 0.192), -6px 0 10px -5px rgba(0, 0, 0, 0.192);
     border-radius: 8px;
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 100%;
     width: 100%;
 }
 
 .carousel-custom .carousel-inner img {
-    width: 100%; 
-    height: 400px; 
+    width: 100%;
+    height: auto;
     max-height: 1000px;
 }
 
@@ -152,7 +157,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -175,7 +180,7 @@ h2, h3, h4, h5 {
 }
 
 .info-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -206,39 +211,46 @@ h2, h3, h4, h5 {
     margin-top: 50px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: var(--accent-light);  
-    width: 40px; 
-    height: 40px;  
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: var(--accent-light);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
     position: absolute;
-    top: 50%;  
-    transform: translateY(-50%); 
-    z-index: 1; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .carousel-control-prev {
-    left: -56px;  
+    left: -56px;
 }
 
 .carousel-control-next {
-    right: 9px;  
+    right: 9px;
 }
 
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
+
     .imagemContainer {
         flex-direction: column;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .textoHeader h1 {
+        font-size: 1rem;
     }
 }
