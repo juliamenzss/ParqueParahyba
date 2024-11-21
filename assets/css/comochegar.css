@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700;900&display=swap');
 
 :root {
@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%; 
 }
 
 * {
@@ -22,8 +23,6 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: var(--background-light);
 }
 
@@ -31,7 +30,6 @@ header {
     background-size: cover;
     background-position: center;
     text-align: center;
-    overflow: hidden;
     background-color: var(--background-dark);
     height: 170px;
 }
@@ -47,19 +45,20 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 10px 5px;
-    margin-left: 50px;
 }
 
 .textoHeader h1 {
     color: var(--text-dark);
     font-family: 'Noto Serif JP', serif;
-    padding-bottom: 5px;
-    font-size: 45px;
+    font-size: 2.5rem; 
     margin-top: 35px;
+    text-align: center;
 }
 
 .textoHeader p {
     color: var(--text-dark);
+    font-size: 1rem;
+    text-align: center;
 }
 
 .linhaHorizontal {
@@ -74,26 +73,27 @@ header {
     top: 0;
     right: 0;
     background-color: var(--background-dark);
-    padding: 15px 0 10px 56vw;
+    padding: 15px 0;
     z-index: 999; 
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    font-size: 14px;
+    font-size: 1rem;
+    padding: 0;
 }
 
 .navbar li {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 .navbar a {
     color: var(--text-light);
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 8px 10px;
     font-weight: 500;
     transition: color 0.3s ease; 
 }
@@ -103,7 +103,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -119,6 +119,8 @@ footer {
 h2 {
     padding: 20px 0;
     color: var(--text-dark);
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 h2, h3, h4, h5 {
@@ -126,8 +128,8 @@ h2, h3, h4, h5 {
 }
 
 .info-container {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto;
     padding: 20px;
     background-color: var(--text-light);
     border-radius: 8px;
@@ -136,13 +138,13 @@ h2, h3, h4, h5 {
 
 .info-container h2 {
     margin-top: 20px;
-    color: var(--text-dark);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .info-container p {
     margin: 10px 0;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .map-container {
@@ -150,10 +152,25 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .textoHeader h1 {
+        font-size: 2rem; 
+    }
+
+    .navbar ul {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
-        padding: 15px 0 10px 0;
-        justify-content: center;
+        flex-direction: column;
+        padding: 15px 0;
     }
 
     .navbar ul {
@@ -161,11 +178,34 @@ h2, h3, h4, h5 {
         align-items: center;
     }
 
+    .navbar li {
+        margin: 10px 0;
+    }
+
     .textoHeader h1 {
-        font-size: 32px; 
+        font-size: 1.8rem; /* Ajuste para telas pequenas */
     }
 
     .textoHeader p {
-        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .info-container {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textoHeader h1 {
+        font-size: 1.5rem; /* Ajuste para telas muito pequenas */
+    }
+
+    .navbar ul {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 10px;
     }
 }
