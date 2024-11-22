@@ -81,15 +81,15 @@ header {
     margin-top: 50px;
 }
 
-.textoHeader p {
+/* .textoHeader p {
     color: var(--text-dark);
-}
+} */
 
-.linhaHorizontal {
+/* .linhaHorizontal {
     height: 2px;
     background-color: var(--divider);
     margin: 10px 0;
-}
+} */
 
 .bemVindoNav {
     margin-left: 20px;
@@ -173,6 +173,8 @@ footer {
 h2 {
     padding: 20px 0;
     color: var(--text-light);
+    font-size: 1.8rem;
+    text-align: start;
 }
 
 h2, h3, h4, h5 {

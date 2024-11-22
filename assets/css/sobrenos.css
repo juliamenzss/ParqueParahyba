@@ -10,9 +10,20 @@
     --divider: #c6bd563d;
 }
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-light);
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    flex: 1; 
 }
 
 * {
@@ -21,10 +32,6 @@ html {
     padding: 0;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--background-light);
-}
 
 header {
     background-size: cover;
@@ -50,6 +57,7 @@ header {
     margin-top: 28px;
 }
 
+
 .bemVindoNav {
     margin-left: 20px;
 }
@@ -63,11 +71,11 @@ header {
     z-index: 999;
     display: flex;
     justify-content: center;
-    transition: transform 0.3s ease-in-out; /* Suavidade no desaparecimento */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .navbar.hidden {
-    transform: translateY(-100%); /* Esconde a barra ao mover para cima */
+    transform: translateY(-100%); 
 }
 
 .navbar ul {
@@ -96,11 +104,6 @@ header {
 }
 
 
-main {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 footer {
     display: flex;
     align-items: center;
@@ -108,6 +111,8 @@ footer {
     padding: 20px;
     height: 60px;
     background-color: var(--background-dark);
+    position: relative; 
+    width: 100%; 
 }
 
 h2 {
@@ -123,6 +128,7 @@ h2, h3, h4, h5 {
 
 .info-container {
     width: 90%;
+    /* height: 100%; */
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -139,15 +145,9 @@ h2, h3, h4, h5 {
     margin: 10px 0;
     font-size: 1rem;
 }
-
-.map-container {
-    margin: 20px 0;
-    text-align: center;
-}
-
 @media (max-width: 1024px) {
     .textoHeader h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .navbar ul {
@@ -158,16 +158,6 @@ h2, h3, h4, h5 {
         font-size: 1.5rem;
     }
 
-    .map-container {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .map-container iframe {
-        width: 100%;
-        height: 350px;
-    }
 
     @media (max-width: 768px) {
         .navbar {
@@ -196,26 +186,6 @@ h2, h3, h4, h5 {
             width: 100%;
             padding: 15px;
         }
-
-        .map-container iframe {
-            width: 500px;
-            height: 350px;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 300px;
-        }
-        p{
-            font-size: 1rem !important;
-        }
-    
-        h2{
-            font-size: 1.7rem !important;
-        }
-        footer p{
-            font-size: 1rem !important;
-        }
     }
 
     @media (max-width: 480px) {
@@ -230,11 +200,6 @@ h2, h3, h4, h5 {
         footer {
             padding: 10px;
             text-align: center;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 250px;
         }
         p{
             font-size: 0.9rem !important;
