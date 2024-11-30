@@ -1,6 +1,8 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700;900&display=swap');
 
+/* VARIÁVEIS*/
 :root {
     --background-light: #FBFCEB;
     --background-dark: #c4b46a;
@@ -10,6 +12,7 @@
     --divider: #c6bd563d;
 }
 
+/*GLOBAL*/
 html {
     scroll-behavior: smooth;
     font-size: 100%;
@@ -26,6 +29,7 @@ body {
     background-color: var(--background-light);
 }
 
+/* HEADER */
 header {
     background-size: cover;
     background-position: center;
@@ -45,14 +49,12 @@ header {
 
 .textoHeader h1 {
     color: var(--text-dark);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     margin-top: 28px;
 }
 
-.bemVindoNav {
-    margin-left: 20px;
-}
+
+/* NAVBAR */
 .navbar {
     width: 100%;
     position: fixed;
@@ -63,11 +65,11 @@ header {
     z-index: 999;
     display: flex;
     justify-content: center;
-    transition: transform 0.3s ease-in-out; /* Suavidade no desaparecimento */
+    transition: transform 0.3s ease-in-out;
 }
 
 .navbar.hidden {
-    transform: translateY(-100%); /* Esconde a barra ao mover para cima */
+    transform: translateY(-100%);
 }
 
 .navbar ul {
@@ -95,12 +97,13 @@ header {
     color: #5a5c2fd8;
 }
 
-
+/* MAIN */
 main {
     max-width: 90%;
     margin: 0 auto;
 }
 
+/* FOOTER */
 footer {
     display: flex;
     align-items: center;
@@ -110,17 +113,17 @@ footer {
     background-color: var(--background-dark);
 }
 
-h2 {
-    padding: 20px 0;
-    color: var(--text-dark);
-    font-size: 1.8rem;
-    text-align: start;
-}
-
 h2, h3, h4, h5 {
     color: var(--text-dark);
 }
 
+h2 {
+    padding: 20px 0;
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+/* INFO-CONTAINERS */
 .info-container {
     width: 90%;
     margin: 0 auto;
@@ -131,7 +134,6 @@ h2, h3, h4, h5 {
 
 .info-container h2 {
     margin-top: 20px;
-    color: var(--text-dark);
     font-size: 1.8rem;
 }
 
@@ -140,11 +142,20 @@ h2, h3, h4, h5 {
     font-size: 1rem;
 }
 
+/* MAP */
 .map-container {
     margin: 20px 0;
     text-align: center;
 }
 
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET (1024px) */
 @media (max-width: 1024px) {
     .textoHeader h1 {
         font-size: 1.5rem;
@@ -158,17 +169,11 @@ h2, h3, h4, h5 {
         font-size: 1.5rem;
     }
 
-    .map-container {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-
     .map-container iframe {
-        width: 100%;
         height: 350px;
     }
 
+    /* MOBILE (768px) */
     @media (max-width: 768px) {
         .navbar {
             flex-direction: column;
@@ -198,26 +203,23 @@ h2, h3, h4, h5 {
         }
 
         .map-container iframe {
-            width: 500px;
-            height: 350px;
-        }
-
-        .map-container iframe {
-            width: 100%;
             height: 300px;
         }
-        p{
+
+        p {
             font-size: 1rem !important;
         }
-    
-        h2{
+
+        h2 {
             font-size: 1.7rem !important;
         }
-        footer p{
+
+        footer p {
             font-size: 1rem !important;
         }
     }
 
+    /* MOBILE S (480px) */
     @media (max-width: 480px) {
         .textoHeader h1 {
             font-size: 1.5rem;
@@ -233,16 +235,18 @@ h2, h3, h4, h5 {
         }
 
         .map-container iframe {
-            width: 100%;
             height: 250px;
         }
-        p{
+
+        p {
             font-size: 0.9rem !important;
         }
-        h2{
+
+        h2 {
             font-size: 1.5rem !important;
         }
-        footer p{
+
+        footer p {
             font-size: 0.8rem !important;
         }
     }
