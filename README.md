@@ -80,13 +80,16 @@ git push origin minha-feature
 
 	5.	Abra um pull request.
 
-📜 Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
 
 👥 Autores
-
-
+https://github.com/juliamenzss	
+https://github.com/richellemm
+https://github.com/nrdcls
+https://github.com/dhenriquea1419
+https://github.com/erikaveloso
+https://github.com/manuelaaime
+https://github.com/GustavoAlbuq
+https://github.com/PGeorge044
 
 🎥 Demonstrativo
 
