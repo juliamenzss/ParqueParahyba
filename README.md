@@ -94,5 +94,3 @@ https://github.com/PGeorge044
 🎥 Demonstrativo
 
  acesse o site ao vivo: Parque Parahyba IV.
-
-Agora é só salvar esse README no repositório, fazer o commit e subir as alterações! Se precisar de mais ajuda, é só pedir
