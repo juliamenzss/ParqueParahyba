@@ -1,96 +1,80 @@
+<div align=center>
 
-Parque Parahyba IV - Portal Informativo
+# Parque Parahyba IV :deciduous_tree:
+</div>
 
-Este projeto consiste em um portal informativo dedicado ao Parque Parahyba IV, localizado em João Pessoa, PB. O objetivo é fornecer informações sobre localização, acessibilidade, atrações, eventos e outros detalhes úteis, promovendo o uso do parque por moradores e turistas.
+- Este projeto é destinado ao Projeto Final de conclusão da disciplina Projeto Extensionista 1 - Fundamentos da Programação, turma P2B noite, UNIESP.
 
-🗂️ Tabela de Conteúdos
+- O portal consiste em um ambiente informativo dedicado ao Parque Parahyba IV, localizado em João Pessoa, Paraíba. O objetivo é fornecer informações sobre localização, acessibilidade, atrações, eventos e outros detalhes úteis, promovendo o uso do parque por moradores e turistas.
 
-	•	Visão Geral
-	•	Tecnologias
-	•	Instalação
-	•	Uso
-	•	Contribuição
-	•	Licença
-	•	Autores
-	•	Demonstrativo
+<hr>
 
-🌟 Visão Geral
+## 🗂️ Tabela de Conteúdos
 
-O Parque Parahyba IV é um espaço público que faz parte de um projeto de urbanização em João Pessoa, PB. Este portal foi desenvolvido para centralizar informações sobre:
-	•	Atrações e atividades disponíveis.
-	•	Eventos realizados no parque.
-	•	Informações de acesso, como mapa e transporte público.
+- [Visão Geral](#-visão-geral)
+- [Tecnologias](#-tecnologias)
+- [Requisitos](#-requisitos)
+- [Acesso ao código](#-acesso-ao-código)
+- [GitPage](#-gitpage)
+- [Autores](#-autores)
 
-💻 Tecnologias
+<hr>
+
+## 🌟 Visão Geral
+
+- O Parque Parahyba IV é um espaço público que faz parte de um projeto de urbanização em João Pessoa, Paraíba. Este portal foi desenvolvido para centralizar informações sobre:
+	- Atrações e atividades disponíveis.
+	- Eventos realizados no parque.
+	- Informações de acesso, como mapa e transporte público.
+
+<hr>
+
+## 💻 Tecnologias
 
 As principais tecnologias utilizadas neste projeto incluem:
-	•	HTML5: Estruturação das páginas.
-	•	CSS3: Estilo e design do site.
-	•	JavaScript: Funcionalidades dinâmicas e interativas.
-	•	Google Fonts: Para tipografia moderna e acessível.
-	•	Google Maps API: Integração com mapas interativos.
 
-Requisitos
+	•	HTML5;
+	•	CSS3;
+	•	JavaScript;
+	•	Google Fonts;
+	•	Google Maps API;
+
+<hr>
+
+## :bookmark: Requisitos
 
 	•	Navegador moderno para visualização.
 	•	Editor de texto para alterações no código (ex.: VS Code).
 
-🚀 Instalação
+<hr>
+
+## 🚀 Acesso ao código
 
 Siga as etapas abaixo para rodar o projeto localmente:
-	1.	Clone o repositório:
 
-git clone https://github.com/juliamenzss/ParqueParahyba.git
-
-
+	1.	Clone o repositório: git clone https://github.com/juliamenzss/ParqueParahyba.git
 	2.	Abra os arquivos no editor de código (opcional).
 	3.	Inicie o projeto:
-	•	Você pode abrir o arquivo index.html diretamente em um navegador.
-	•	Para um melhor fluxo de desenvolvimento, utilize extensões como o Live Server no VS Code.
+		- Você pode abrir o arquivo index.html diretamente em um navegador.
+		- Para um melhor fluxo de desenvolvimento, utilize extensões como o Live Server no VS Code.
 
-⚙️ Uso
+<hr>
 
-Após clonar o repositório, siga estas etapas para usar o portal:
-	1.	Navegue até a pasta onde o repositório foi clonado:
+## 🎥 GitPage
 
-cd ParqueParahyba
+ * juliamenzss.github.io/ParqueParahybaIV/
 
+<hr>
 
-	2.	Abra o arquivo index.html em qualquer navegador moderno.
-	3.	Para desenvolvimento em tempo real, use um servidor local, como o Live Server.
+ ## 👥 Autores
 
-🤝 Contribuição
+- Daniel Henrique (https://github.com/dhenriquea1419);
+- Érika Veloso (https://github.com/erikaveloso)
+- Gustavo Albuquerque (https://github.com/GustavoAlbuq)
+- Júlia Menezes (https://github.com/juliamenzss)
+- Manuela Aimê (https://github.com/manuelaaime)
+- Natália Rodrigues (https://github.com/nrdcls)	
+- Paulo George (https://github.com/PGeorge044)
+- Richelle Monteiro (https://github.com/richellemm)
 
-Contribuições são bem-vindas! Siga as etapas abaixo para colaborar:
-	1.	Faça um fork do repositório.
-	2.	Crie um branch com sua feature ou correção:
-
-git checkout -b minha-feature
-
-
-	3.	Faça o commit das suas alterações:
-
-git commit -m 'Descrição da minha feature'
-
-
-	4.	Faça o push para o branch:
-
-git push origin minha-feature
-
-
-	5.	Abra um pull request.
-
-
-👥 Autores
-https://github.com/juliamenzss	
-https://github.com/richellemm
-https://github.com/nrdcls
-https://github.com/dhenriquea1419
-https://github.com/erikaveloso
-https://github.com/manuelaaime
-https://github.com/GustavoAlbuq
-https://github.com/PGeorge044
-
-🎥 Demonstrativo
-
- acesse o site ao vivo: Parque Parahyba IV.
+<hr>
